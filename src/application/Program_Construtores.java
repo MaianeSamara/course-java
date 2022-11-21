@@ -14,6 +14,11 @@ public class Program_Construtores {
 		
 		Product_Construtores product = new Product_Construtores();
 		
+		//Atributos "Vazios"
+		System.out.println(product.name);
+		System.out.println(product.price);
+		System.out.println(product.quantity);
+		
 		System.out.println("Enter product data: ");
 		System.out.print("Name: ");
 		product.name = sc.next();
