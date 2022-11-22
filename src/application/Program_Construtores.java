@@ -12,6 +12,8 @@ public class Program_Construtores {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		Product_Construtores p = new Product_Construtores();
+		
 		//Atributos "Vazios"
 //		System.out.println(product.name);
 //		System.out.println(product.price);
@@ -22,16 +24,14 @@ public class Program_Construtores {
 		String name = sc.next();		
 		System.out.print("Price: ");
 		double price = sc.nextDouble();	
-		System.out.print("Quantity in stock: ");
-		int quantity = sc.nextInt();
-		Product_Construtores product = new Product_Construtores(name, price, quantity);
+		Product_Construtores product = new Product_Construtores(name, price);
 		
 		System.out.println();
 		System.out.println("Product data: " + product);
 
 		System.out.println();
 		System.out.print("Enter the number os products to be added in stock: ");
-		quantity = sc.nextInt();
+		int quantity = sc.nextInt();
 		product.addProducts(quantity);
 		
 		System.out.println();
